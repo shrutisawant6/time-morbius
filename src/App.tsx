@@ -177,8 +177,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App text-align-center">
-      <div>
-        <h1>Time Morbius </h1>
+      <div> 
+        <h1>Time Mobius</h1>
       </div>
 
       <TimeZoneSelector
