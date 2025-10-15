@@ -177,20 +177,20 @@ const App: React.FC = () => {
 
   return (
     <div className="App text-align-center">
-      <div> 
-        <h1>Time Mobius</h1>
+      <div>
+        <h1>Time Morbius</h1>
       </div>
 
-        <TimeZoneSelector
-          timeZones={timeZones}
-          selectedTimeZone={selectedTimeZone}
-          onChange={setSelectedTimeZone}
-        />
+      <TimeZoneSelector
+        timeZones={timeZones}
+        selectedTimeZone={selectedTimeZone}
+        onChange={setSelectedTimeZone}
+      />
 
-        {/* Local clock */}
-        {renderClock(hours, minutes, seconds, isPM, localClockRef, true)}
-        {/* Timezone clock */}
-        {renderClock(tzHours, tzMinutes, tzSeconds, tzIsPM)}
+      {/* Local clock */}
+      {renderClock(hours, minutes, seconds, isPM, localClockRef, true)}
+      {/* Timezone clock */}
+      {renderClock(tzHours, tzMinutes, tzSeconds, tzIsPM)}
     </div>
   );
 };
